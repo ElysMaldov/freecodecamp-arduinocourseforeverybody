@@ -3,6 +3,8 @@
 const auto PIN_GREEN = 3;
 const auto PIN_YELLOW = 5;
 const auto PIN_RED = 7;
+const int ON_DELAY = 3000;
+const int ON_DELAY_2 = 1000;
 
 void setup()
 {
@@ -15,16 +17,16 @@ void loop()
 {
   // Green
   digitalWrite(PIN_GREEN, HIGH);
-  delay(5000);
+  delay(ON_DELAY);
   digitalWrite(PIN_GREEN, LOW);
 
   // Yellow
   digitalWrite(PIN_YELLOW, HIGH);
-  delay(1000);
+  delay(ON_DELAY_2);
   digitalWrite(PIN_YELLOW, LOW);
 
   // Red
   digitalWrite(PIN_RED, HIGH);
-  delay(5000);
+  delay(ON_DELAY);
   digitalWrite(PIN_RED, LOW);
 }
