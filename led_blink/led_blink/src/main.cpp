@@ -1,18 +1,44 @@
 #include <Arduino.h>
 
-// put function declarations here:
-int myFunction(int, int);
-
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+void setup()
+{
+  // Set which
+  pinMode(7, OUTPUT);
 }
 
-void loop() {
+void loop()
+{
+  uint8_t pinNumber = 7;
   // put your main code here, to run repeatedly:
-}
+  digitalWrite(pinNumber, HIGH); // on
 
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+  delay(1000);
+
+  digitalWrite(pinNumber, LOW); // off
+
+  delay(500);
+
+  digitalWrite(pinNumber, HIGH); // on
+
+  delay(500);
+
+  digitalWrite(pinNumber, LOW); // off
+
+  delay(500);
+
+  digitalWrite(pinNumber, HIGH); // on
+
+  delay(500);
+
+  digitalWrite(pinNumber, LOW); // off
+
+  delay(500);
+
+  digitalWrite(pinNumber, HIGH); // on
+
+  delay(500);
+
+  digitalWrite(pinNumber, LOW); // off
+
+  delay(500);
 }
